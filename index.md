@@ -32,7 +32,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### 예시 제목 2
 
-이 글은 예시로 작성되었습니다. ‘ABCDEFGhijklmnOPQRSTUvwxyz’
+이 글은 예시로 작성되었습니다. `ABCDEFGhijklmnOPQRSTUvwxyz`
 
 ### 지원 또는 문의
 
