@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+## Virtualization for Android 미러서버에 오신 것을 환영합니다.
 
-You can use the [editor on GitHub](https://github.com/viz4and/mirror/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+이 페이지는 시작페이지이며, 당신은 언제든지 이 Repository 안에서 자유롭게 게시글 미러링이 가능합니다.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Github로 운영하는 사이트이므로 개방적입니다. 따라서 사용에 주의해주시기 바랍니다.
 
-### Markdown
+### 예시 제목 1
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+이 글은 예시로 작성되었습니다.
 
 ```markdown
 Syntax highlighted code block
@@ -28,10 +28,12 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+앞으로 위에 있는 링크는 필히 읽어보실 것을 권장합니다.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/viz4and/mirror/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 예시 제목 2
 
-### Support or Contact
+이 글은 예시로 작성되었습니다. ‘ABCDEFGhijklmnOPQRSTUvwxyz’
+
+### 지원 또는 문의
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
