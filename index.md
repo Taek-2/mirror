@@ -34,7 +34,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 이 글은 예시로 작성되었습니다.
 
-[게시판으로 이동하기](/board)
+[게시판으로 이동하기](/mirror/board)
 
 ### 지원 또는 문의
 
