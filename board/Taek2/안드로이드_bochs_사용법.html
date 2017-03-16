@@ -1,0 +1,1231 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Bochs Android 사용법 : 네이버 카페</title>
+    
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex, nofollow" />
+
+
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?2" />
+
+
+
+
+
+
+
+	<link rel="apple-touch-icon-precomposed" href="http://cafeimgs.naver.net/mobile/img/favicon2016/android_96x96_xhdpi.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://cafeimgs.naver.net/mobile/img/favicon2016/android_144x144_xxhpdi.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="192x192" href="http://cafeimgs.naver.net/mobile/img/favicon2016/android_192x192_xxxhpdi.png" />
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+
+<link rel="stylesheet" href="/static/css/mobileweb/Style/MyCafeStyle-1488964408000-563284.css" type="text/css">
+
+<script type="text/javascript" src="/static/js/mobileweb/core/CommonTopScript-1486296485000-5690.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+document.domain='naver.com';
+</script>
+    
+
+<meta name="decorator" content="MyCafe" />
+<meta name="headerClass" content="fix" />
+<meta name="footerAppNClickValue" content="rct.app" />
+<meta name="footerClass" content="f_fix" />
+<meta name="showMobileGuestBannerOnTop" content="false" />
+<meta name="jsfooter" content="/jsp/board/article/include/ScriptArticleRead.jsp" />
+
+
+</head>
+
+
+<body class="a" onload="mCafeCommon.blockMouseRight();orientationonChange();mCafeCommon.closeScroll();"
+      onorientationchange="orientationonChange();">
+
+
+<div class="u_skip">
+    <a href="#ct" onclick="var t=document.getElementById('ct');t.tabIndex=-1;t.focus();return false;" class="skip">본문 바로가기</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class='header fix' id="hd">
+	
+	
+
+
+<div class='gnb' role='banner'>
+	<div class='gnb_l'>
+		<a href='/' class='gnb_home' onclick="nclk(this, 'gnb.home', '', '');"><span class='blind'>카페홈</span></a>
+	</div>
+	<h1><a href="/viz4and" onclick="nclk(this, 'gnb.cafename', '', '');" id="cafeInfo"><span class="ellip">비즈포안드</span></a></h1>
+	<div class='gnb_sc'>
+		<a href="/ArticleSearchList.nhn?search.clubid=28957042&search.menuid=23" class='gnb_search' role="button" onclick="nclk(this, 'gnb.cafesearch', '', '');"><span class='blind'>검색</span></a>
+	</div>
+	<div class='gnb_r'>
+		<a href='#' class="gnb_ham _click(MyCafeLayout|ShowMenuList) _stopDefault" role="button" onclick="nclk(this, 'gnb.cafeboard', '', '');"><span class='blind'>확장영역 열기</span></a>
+	</div>
+</div>
+	
+	
+	
+	
+	
+</header>
+
+
+
+
+
+
+
+
+
+
+<div id="dimmedLayer" class="dimmed"></div>
+<div id="sideMenuLayer" class="slide_right" style="display:none;">
+	<div id="sideMenuContainer" class="side_menu">
+	</div>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr />
+
+
+
+
+
+<div id="ct">
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="post_title">
+	<a href="/ArticleList.nhn?search.clubid=28957042&search.menuid=23" class="tit_menu" onclick="nclk(this,'art.board','','');">
+		<span class="ic_bt b1">B</span><span class="ellip">Bochs 사용 Tip</span>
+	</a>
+ 	<h2 class="tit">Bochs Android 사용법</h2>
+	<a href="/CafeMemberProfile.nhn?cafeId=28957042&memberId=tagiking" class="thumb" onclick="nclk(this,'nui.aname','','');">
+		<img src="http://blogpfthumb.phinf.naver.net/20160203_70/tagiking_1454479330026SjMFT_JPEG/profileimage.jpg?type=c77_77" alt="프로필사진" width="35" height="35" onerror="this.src='http://static.naver.net/m/cafe/mobile/cafe_profile_c77.png';"/>
+	</a>
+	<div class="info">
+		<a href="/CafeMemberProfile.nhn?cafeId=28957042&memberId=tagiking" class="nick" onclick="nclk(this,'nui.aname','','');">
+			<span class="end_user_nick"><span class="ellip">Taek2</span></span><span class="user_id">(tagi****)</span>
+		</a>
+		
+	</div>
+	<div class="info">
+		<span class="date font_l">2017.03.13. 16:55</span>
+		<span class="no font_l">조회 <em>7</em></span>
+	</div>
+	
+
+
+
+
+
+
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+	
+
+
+<div class="aside_layer">
+	<a href="#" class="btn_aside _click(ArticleFunctionButton|ToggleOptionLayer) _stopDefault" role="button"><span class="more">본문 기타 기능</span></a>
+	<div id="optionLayer" class="layer" style="display: none">
+		<strong class="blind">본문 폰트 크기 조정</strong>
+		<div id="fontBox" class="font_box font_box_s">
+			<a href="#" class="small _click(FontSizeManager|Small) _stopDefault" onclick="nclk(this,'art*t.txts','','');"><span class="sim">본문 폰트 크기 작게 보기</span></a>
+			<a href="#" class="big _click(FontSizeManager|Big) _stopDefault" onclick="nclk(this,'art*t.txtl','','');"><span class="sim">본문 폰트 크기 크게 보기</span></a>
+			<span id="fontSizePreview" class="font_box_size">가</span>
+		</div>
+		<ul>
+			
+			
+				<li>
+					<a href="#" class="btn _click(ArticleFunctionButton|WriteReply) _stopDefault" onclick="nclk(this,'art*t.reply','','');">
+						답글쓰기
+					</a>
+				</li>
+			
+			
+				<li><a href="#" class="btn keep _click(ArticleFunctionButton|addArticleStorage) _stopDefault" onclick="nclk(this,'art*t.keep','','');">보관하기</a></li>
+			
+			
+				<li><a href="#" class="btn modify _click(ArticleFunctionButton|Modify) _stopDefault" onclick="nclk(this,'art*t.edit','','');">수정하기</a></li>
+			
+			
+				<li><a href="#" class="btn del _click(ArticleFunctionButton|Remove) _stopDefault" onclick="nclk(this,'art*t.del','','');">삭제하기</a></li>
+			
+		</ul>
+		
+	</div>
+ </div>
+ </div>
+     
+
+	<!-- 라이브검색 안내문구 -->
+	
+
+	
+		
+	
+	
+	
+	
+	
+
+
+
+
+
+<div id="fontZoomTooltip" class="font_zoom_hint tooltip"></div>
+
+
+<div id="SoldOutLayer" class="ly_alert" style="display:none">
+	<div class="la_b" id="SoldOutAlertLayer">
+		<div class="la_flex">
+			<div class="la_tw">
+				<p class="la_t">판매완료로 변경 시, 판매중으로<br>되돌릴 수 없습니다.<br>판매완료로 변경하시겠습니까?</p>
+			</div>
+		</div>
+		<div class="la_btns">
+			<button class="la_btn _click(ArticleRead|HideSoldOutLayer) _stopDefault">취소</button>
+			<button class="la_btn la_ok _click(ArticleRead|SoldOut) _stopDefault" onclick="nclk(this,'arc.soldok','','');">확인</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="layer_var_fix" id="SellerInfoLayer"  style="display:none; height:100%">
+	<div class="layer_guide" id="SellerInfoAlertLayer">
+		<div class="inner_v2" style="width: 265px;">
+			<strong class="tit">판매자정보 안내</strong>
+			<p class="txt">판매완료 또는 글이 수정된 지 <em>한달이 지난 경우</em> 연락처, 이메일이 노출되지 않습니다.</p>
+			<a class="link_close _click(ArticleRead|HideSellerInfoLayer) _stopDefault"><span class="cafe_ic"><span class="blind">닫기</span></span></a>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="RegisterNewArticleLayer" class="ly_alert" style="display: none">
+	<div class="la_b" id="RegisterNewArticleAlertLayer">
+		<div class="la_flex">
+			<div class="la_tw">
+				<p class="la_t">현재글은 '판매완료' 상태로 변경되며,<br>동일한 글이 새 글로 등록됩니다.<br><span class="la_st">일 1회, 총 3회 사용가능</span></p>
+			</div>
+		</div>
+		<div class="la_btns">
+			<button class="la_btn  _click(ArticleRead|HideRegisterNewArticleLayer) _stopDefault">취소</button>
+			<button class="la_btn la_ok _click(ArticleRead|ArticleClone) _stopDefault">확인</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="OtnLayer" class="ly_alert" style="display: none;">
+	<div class="la_b" id="OtnAlertLayer">
+		<div class="la_flex">
+			<div class="la_tw">
+				<table class="la_table">
+					<caption class="blind">안심번호 안내</caption>
+					<tr>
+						<th>판매자 안심번호</th>
+						<td class="t_r" ><em id="OtnPhoneNumber"></em></td>
+					</tr>
+					<tr>
+						<th>연락 가능 기간</th>
+						<td class="t_r"><em id="OtnContactPeriod"></em></td>
+					</tr>
+				</table>
+				<p class="la_tx">안심번호로 전화/문자가 가능하며, 안전한 거래를 위해 판매자의 실제 전화번호를 꼭 확인하세요.</p>
+			</div>
+		</div>
+		<div class="la_btns">
+			<button class="la_btn _click(ArticleRead|HideOtnLayer) _stopDefault">확인</button>
+		</div>
+	</div>
+</div>
+
+
+
+	
+	
+	
+	
+	<div id="postContent" class="post_cont" style="overflow-x:auto;">
+
+		 
+		 
+	     
+	
+		
+		
+		
+			
+			<p>
+				
+					
+					
+					
+					<p>안녕하세요 태긔입니다! 첫 글을 남기게 되었습니다.<br />(시작에 앞서 여기에 박스apk파일은<br />플레이스토어 박스에  no needs to download 후 튕기는 현상이 없습니댜.<br /><br />처음으로 , 초보자분들은 알기 어려운 bochs 안드로이드 버전 사용법을 알려드리겠습니다.<br /><br />준비물:첨부파일 1,3<br /><br />우선,첨부1-박스를 설치해주세요.<br />(여기까진 간단합니다.)<br /><br /></p><div style="margin:0 -15px"><img class="fx _click(Utility|ThumbView|https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2FMjAxNzAzMTNfMjM4%2FMDAxNDg5MzkxNjgzNjE3.F91YqNliekjfiRW_N2YoG61X8uZIiLq6HI8SnTokUYAg.tfa_oPHbbF61Bzm69LAswi7Zm1vPDYuPysao5R_mZn0g.JPEG.tagiking%2FexternalFile.jpg%3Ftype%3Dw1280)" src="https://mcafethumb-phinf.pstatic.net/MjAxNzAzMTNfMjM4/MDAxNDg5MzkxNjgzNjE3.F91YqNliekjfiRW_N2YoG61X8uZIiLq6HI8SnTokUYAg.tfa_oPHbbF61Bzm69LAswi7Zm1vPDYuPysao5R_mZn0g.JPEG.tagiking/externalFile.jpg?type=w740" alt="본문 이미지" /></div><br /><p>박스라고 읽습니다.<br /><br />아직 실행하지 않은상태로<br /><br />첨부3-리소스의 압푹을 풂니다<br /><br /></p><div style="margin:0 -15px"><img class="fx _click(Utility|ThumbView|https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2FMjAxNzAzMTNfMTU0%2FMDAxNDg5MzkxNjg0ODI4.yHaeY2Ome37TSyMts_UzzycG53--EwQSQfQgkearYQIg.kQEHYDM4M-EUIE97vbta3jTwKQH3H25gkePMJACR_Kkg.JPEG.tagiking%2FexternalFile.jpg%3Ftype%3Dw1280)" src="https://mcafethumb-phinf.pstatic.net/MjAxNzAzMTNfMTU0/MDAxNDg5MzkxNjg0ODI4.yHaeY2Ome37TSyMts_UzzycG53--EwQSQfQgkearYQIg.kQEHYDM4M-EUIE97vbta3jTwKQH3H25gkePMJACR_Kkg.JPEG.tagiking/externalFile.jpg?type=w740" alt="본문 이미지" /></div><br /><p><br />이 폴더를 폰 최상위폴더&gt;Android&gt;data<br />안으로 이동시켜주세요.<br /><br /></p><div style="margin:0 -15px"><img class="fx _click(Utility|ThumbView|https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2FMjAxNzAzMTNfMjUx%2FMDAxNDg5MzkxNjg3NzE0.lalOXKwQF3TCv8yliBHSWlNqo3LlpkmAbuawB8MneaYg.vO2PzVrrxogx-t-IHqguIV0U3zRmvrx7FbI6O-RkIX4g.JPEG.tagiking%2FexternalFile.jpg%3Ftype%3Dw1280)" src="https://mcafethumb-phinf.pstatic.net/MjAxNzAzMTNfMjUx/MDAxNDg5MzkxNjg3NzE0.lalOXKwQF3TCv8yliBHSWlNqo3LlpkmAbuawB8MneaYg.vO2PzVrrxogx-t-IHqguIV0U3zRmvrx7FbI6O-RkIX4g.JPEG.tagiking/externalFile.jpg?type=w740" alt="본문 이미지" /></div><br /><p><br />박스를 실행해주세요.<br />(스샷에 런처는 잘못된거)<br /><br /></p><div style="margin:0 -15px"><img class="fx _click(Utility|ThumbView|https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2FMjAxNzAzMTNfMjU2%2FMDAxNDg5MzkxNjkxMDE3.4py0sNwDYHaxzDCfTBWN9nxGooWD55SaCo3JMJ8J-iUg.jMg-CEED8loXhSVzJWLtyYW450BomMQgh8MMyaK2CdMg.JPEG.tagiking%2FexternalFile.jpg%3Ftype%3Dw1280)" src="https://mcafethumb-phinf.pstatic.net/MjAxNzAzMTNfMjU2/MDAxNDg5MzkxNjkxMDE3.4py0sNwDYHaxzDCfTBWN9nxGooWD55SaCo3JMJ8J-iUg.jMg-CEED8loXhSVzJWLtyYW450BomMQgh8MMyaK2CdMg.JPEG.tagiking/externalFile.jpg?type=w740" alt="본문 이미지" /></div><br /><div style="margin:0 -15px"><img class="fx _click(Utility|ThumbView|https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2FMjAxNzAzMTNfOTQg%2FMDAxNDg5MzkxNjk3NTE3.FBioVYFB_P7YNI6LVi4pSCr-MkV-6Y8ZBGrhAUWGkLAg.3sCJF1a0rgq9DIjLWqk4O9IK4nzLIqRqv_Qi9m1NSRAg.JPEG.tagiking%2FexternalFile.jpg%3Ftype%3Dw1280)" src="https://mcafethumb-phinf.pstatic.net/MjAxNzAzMTNfOTQg/MDAxNDg5MzkxNjk3NTE3.FBioVYFB_P7YNI6LVi4pSCr-MkV-6Y8ZBGrhAUWGkLAg.3sCJF1a0rgq9DIjLWqk4O9IK4nzLIqRqv_Qi9m1NSRAg.JPEG.tagiking/externalFile.jpg?type=w740" alt="본문 이미지" /></div><br /><p>위는 추천 사양입니다.<br /><br />시작을 누르면(위의 c.img는 윈95 이미지)<br /><br />사용이 가능합니다.<br />감사합니다.</p>
+					
+					
+				
+			</p>
+				
+		
+		
+	</div>
+	
+	
+	
+
+
+
+
+
+
+
+	
+	<div class="flies_area">
+		<ul>
+				
+		
+				
+		
+				
+		
+				
+		
+				
+		
+				
+		
+				
+			<li>
+				<a href="#" class=" _click(ArticleRead|DownloadAttachFile|http://cafeattach.naver.net/02971eadb7e7e63a14f898a79d730478d88a749665/20170313_45_cafefile/28957042_1489391704845_WFVLy9_zip/%EC%B2%A8%EB%B6%803-%EB%A6%AC%EC%86%8C%EC%8A%A4.zip?type=attachment|false) _stopeDefault">
+					<p class="tit">첨부3-리소스.zip</p>
+					<span class="file_size">133.5KB</span>
+					<span class="date error"></span>
+				</a>
+			</li>
+		
+				
+		
+				
+			<li>
+				<a href="#" class=" _click(ArticleRead|DownloadAttachFile|http://cafeattach.naver.net/7aef66d6c79b9e426c80e0dfe50b7c00a0f20cee8a/20170313_125_cafefile/28957042_1489391804525_Fr9mzL_apk/%EC%B2%A8%EB%B6%801-%EB%B0%95%EC%8A%A4.apk?type=attachment|false) _stopeDefault">
+					<p class="tit">첨부1-박스.apk</p>
+					<span class="file_size">9.1MB</span>
+					<span class="date error"></span>
+				</a>
+			</li>
+		
+		
+		</ul>
+	</div>
+
+	
+
+	
+	
+
+
+
+
+
+
+
+    
+
+	
+	
+
+
+
+
+<div class="end_sns_area">
+	
+	
+	
+	
+
+    
+	<div class="btn_like_w">
+        
+            
+                <div class="u_likeit_list_module _reactionModule" data-sid="CAFE" data-cid="28957042_viz4and_45" data-did="CAFE" data-catgid="28957042">
+                    <a class="u_likeit_list_btn _button" id="articleRecommendBtn" data-type="like" data-log="lik.like|lik.unlike">
+                        <span class="u_ico _icon"></span>
+                        <em class="u_txt _label" style="display: none">좋아요</em>
+                        <em class="u_cnt _count" style="display: none" id="likeCount"></em>
+                    </a>
+                    <a href="#" id="likedMemberBtn" class="btn_like_more _likeItMember _click(ArticleRead|LikeItMemberView|true) _stopDefault" onclick="nclk(this, 'lik.user', '', '')" style="display: none"><span class="u_ico"><em class="blind">더보기</em></span></a>
+                </div>
+            
+            
+            
+            
+        
+	</div>
+	<div class="btn_like_w comment_lst" style="display: inline-block">
+		<div class="u_comment_list_module">
+            <a class="u_likeit_list_btn _click(ArticleRead|ViewComment|0|/CommentView.nhn?search.clubid=28957042&search.articleid=45&page=&sc=) _stopDefault" onclick="nclk(this,'arf.cmt','','');">
+                <span class="u_ico"></span>
+                
+                    
+                    <em class="u_txt">댓글</em>
+                
+            </a>
+		</div>
+	</div>
+	
+	
+</div>
+<script type="text/javascript">
+function  _cafeApplyByLikeBtn(){
+	if(confirm('게시글 좋아요 기능은 카페에 가입한 멤버만 사용 할 수 있습니다. 가입하시겠습니까?')){
+		document.location.href = '/CafeApply.nhn?clubid=' + 28957042;
+	}
+}
+</script>
+
+     
+	
+	
+    
+    
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+
+
+
+
+
+
+<div id="commentArea">
+	
+	<!--CommentList-->
+
+	
+</div>
+
+
+
+
+
+	<div class="section_comment_btn  alone ">
+		<a href="#" class="btn_comment_wirte _click(ArticleRead|ViewComment|0|/CommentView.nhn?search.clubid=28957042&search.articleid=45&page=&sc=) _stopDefault" onclick="nclk(this,'brb.cmtwrite','','');" role="button">댓글쓰기</a>
+	</div>
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='section_nav'>
+	
+	
+	<a href="/ArticleRead.nhn?clubid=28957042&articleid=46&boardtype=null&referrerAllArticles=true&menutype=B&wCmt=true&commentCount=0&commentNew=false&rClick=false" class="prev" onclick="nclk(this,'art.prev','','')">
+		<span class='bu'>이전글</span>
+		<span class="tx"><span class="ellip">윈도우 ME 디스크이미지</span></span>
+		<span class="no font_l">
+		
+		
+		
+			
+		
+		
+		</span>
+	</a>
+	
+	
+	
+	
+	<a href="/ArticleRead.nhn?clubid=28957042&articleid=44&boardtype=null&referrerAllArticles=true&menutype=B&wCmt=true&commentCount=0&commentNew=false&rClick=false" class="next" onclick="nclk(this,'art.next','','')">
+		<span class='bu'>다음글</span>
+		<span class="tx"><span class="ellip">안녕하세요</span></span>
+		<span class="no font_l">	
+		
+		
+		
+			
+		
+		
+		</span>
+	</a>
+	
+	
+</div>
+
+
+	
+	
+
+
+
+
+
+
+	
+
+	
+	
+
+
+
+
+
+
+
+	
+
+	<div id="articleStorageTooltip" class="tooltip_c tooltip_question tooltip_3s" style="display:none;">게시글을 보관하였습니다.</div>
+</div>
+
+
+<hr/>
+
+
+
+
+
+
+ 
+
+
+	
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+<div class="footer_fix">
+    <a href="/ArticleList.nhn?search.clubid=28957042&search.menuid=23&search.boardtype=L&search.page=" class="btn_list" onclick="nclk(this,'bta.list','','')">목록으로</a>
+ 	<div class="right_area">
+ 		
+            
+            
+                
+                    <div class="u_likeit_list_module _reactionModule" data-sid="CAFE" data-cid="28957042_viz4and_45" data-did="CAFE" data-catgid="28957042">
+                        <a class="u_likeit_list_btn _button" data-type="like" data-log="bta.like|bta.unlike">
+                            <span class="u_ico _icon"></span>
+                            <em class="u_cnt _label">0</em>
+                            <em class="u_cnt _count"></em>
+                        </a>
+                    </div>
+                
+                
+                
+                
+            
+
+            <a href="#" class="f_reply _click(ArticleRead|ViewComment|0|/CommentView.nhn?search.clubid=28957042&search.articleid=45&page=&sc=) _stopDefault" onclick="nclk(this,'bta.cmt','','');"><span class="blind">댓글</span><em>0</em></a>
+
+			
+ 			
+	 		
+			   
+			   <a href="#" id="spiButton" data-style="one-button" class="naver-splugin spi_sns_share f_share " onclick="nclk(this, 'bta.share', '', '')"
+			      data-url="http://cafe.naver.com/viz4and/45"
+			      data-title=""
+			      data-cafe-source-type="111"
+			      data-cafe-source-title=""
+			      data-cafe-proxy-url="http://m.cafe.naver.com/CafeScrapContent.nhn?clubid=28957042&articleid=45&type=cafe"
+			      data-cafe-return-url="http://m.cafe.naver.com/viz4and/45"
+			      data-blog-source-type="111"
+			      data-blog-source-title=""
+			      data-blog-proxy-url="http://m.cafe.naver.com/CafeScrapContent.nhn?clubid=28957042&articleid=45&type=blog"
+			      data-blog-return-url="http://m.cafe.naver.com/viz4and/45"
+			      data-oninitialize="splugin_oninitialize();">
+			      <span class="blind">공유하기</span>
+			   </a>
+			
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+function  cafeApplyByLikeBtn(){
+	if(confirm('게시글 좋아요 기능은 카페에 가입한 멤버만 사용 할 수 있습니다. 가입하시겠습니까?')){
+		document.location.href = '/CafeApply.nhn?clubid=' + 28957042;
+	}
+}
+</script>
+
+
+
+
+
+
+
+
+<form name="articleDeleteFrm" method="post" action="/ArticleDelete.nhn">
+	<input type="hidden" name="clubid" value="28957042">
+	<input type="hidden" name="menuid" value="">
+	<input type="hidden" name="articleid" value="45">
+</form>
+
+<form name="simpleArticleDeleteFrm" method="post" action="/SimpleArticleDelete.nhn">
+	<input type="hidden" name="clubid" value="28957042">
+	<input type="hidden" name="articleid" value="45">
+</form>
+
+<form name="articleModifyFrm" method="get" action="/ArticleWrite.nhn">
+	  
+    <input type="hidden" name="articleid" value="45">  
+	  
+    <input type="hidden" name="cluburl" value="viz4and">  
+	
+    <input type="hidden" name="m" value="modify">
+</form>
+
+<form name="simpleArticleModifyFrm" method="get" action="/SimpleArticleWrite.nhn">
+    <input type="hidden" name="m" value="modify">
+    <input type="hidden" name="articleid" value="45">
+    <input type="hidden" name="clubid" value="28957042">
+</form>
+
+<form name="articleSoldOutFrm" method="post" action="/ItemSoldOut.nhn">
+	<input type="hidden" name="cafeId" value="28957042">
+	<input type="hidden" name="menuId" value="">
+	<input type="hidden" name="articleId" value="45">
+	<input type="hidden" name="page" value="">
+	<input type="hidden" name="boardtype" value="">
+</form>
+
+<form name="articleCloneFrm" method="post" action="/ArticleClone.nhn">
+	<input type="hidden" name="clubid" value="28957042">
+	<input type="hidden" name="menuid" value="">
+	<input type="hidden" name="articleid" value="45">
+	<input type="hidden" name="page" value="">
+	<input type="hidden" name="boardtype" value="">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<footer class='footer f_fix' role='contentinfo'>
+	<div class="footer_inner">
+		
+		
+		<div class="u_ftsw">
+			
+			
+			<a href="#" class="btn_app_view _click(CafeAppLauncherUtil|RunCafeApp|navercafe://) _stopDefault" onclick="nclk(this, 'rct.app', '', '');"><strong>앱으로보기</strong></a>
+			
+			
+			
+			
+			
+		</div>
+		
+		
+		<div class='page_top'>
+			<a href='#hd' class='ico ico_top _click(Utility|Top)' role="button" aria-label="맨위로 이동" onclick="nclk(this, 'fot.top', '', '')"><span class='blind'>맨위로 이동</span></a>
+		</div>
+		
+		<div class='footer_snb'>
+			
+			
+			
+				
+					<a href='#' class="_click(LoginManager|Logout|http://m.cafe.naver.com/viz4and) _stopDefault" onclick="nclk(this, 'fot.logout', '', '');">로그아웃</a>
+				
+				
+			
+			
+			
+			<a href='/CafeTerms.nhn' onclick="nclk(this, 'fot.agreement', '', '');">이용약관</a>
+			<a href='http://cafe.naver.com/viz4and/45?viewType=pc' onclick="nclk(this, 'fot.gopc', '', '')">PC버전</a>
+			<a href='http://m.naver.com/services.html?f=svc.cafe' onclick="nclk(this, 'fot.sitemap', '', '');">전체서비스</a>
+		</div>
+		<div class='footer_lnb'>
+			<a href='https://m.help.naver.com/support/service/main.nhn?serviceNo=5622' onclick="nclk(this, 'fot.help', '', '')">카페 고객센터</a>
+			<a href='http://m.cafe.naver.com/Privacy.nhn' onclick="nclk(this, 'fos.privacy', '', '')"><strong>개인정보처리방침</strong></a>
+			<a href='https://m.help.naver.com/support/issue/report.nhn?serviceNo=5622' onclick="nclk(this, 'fos.error', '', '')" class='last'>오류신고</a>
+		</div>
+		<address class='copyright'>&copy;<a href='http://www.navercorp.com' onclick="nclk(this, 'fot.nhncorp', '', '')">NAVER Corp.</a></address>
+	</div>
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+var g_sUserId = 'tagiking';
+var g_sCafeId = '28957042';
+var g_sCafeUrl = 'viz4and';
+
+var g_sCafeMainUrl = 'http://cafe.naver.com';
+var g_sCafeMobileWebUrl = 'http://m.cafe.naver.com';
+var g_sNoteSendUrl = 'http://m.note.naver.com/mobile/mobileSendNoteForm.nhn?reply=1&targetUserId=';
+var g_sUploadDomain = 'http://up.cafe.naver.com';
+var g_sCafeFilesDomain = 'http://cafefiles.naver.net';
+var g_sCafeThumbDomain = 'http://cafethumb.naver.net';
+var g_sMCafeThumbDomain = 'https://mcafethumb-phinf.pstatic.net';
+var g_sGfmarketDomain = 'http://m.gfmarket.naver.com';
+var g_sGfmarketThumbnailDomain = 'http://gfmarket.phinf.naver.net';
+var g_sPhotoInfraUploadDomain = 'cafe.upphoto.naver.com';
+var g_sBlogUrl = 'http://m.blog.naver.com';
+
+var g_sLoginUrl = 'https://nid.naver.com/nidlogin.login?svctype=262144&url=';
+var g_sLogoutUrl = 'https://nid.naver.com/nidlogin.logout?svctype=262144&url=';
+var g_sAutoComplateDomain = 'https://mac.search.naver.com/mobile/ac';
+
+var g_sEncodedRequestUrl = 'http%3A%2F%2Fm.cafe.naver.com%2FArticleRead.nhn%3Fcluburl%3Dviz4and%26articleid%3D45';
+</script>
+
+
+
+
+<script type="text/javascript" src="/static/js/mobileweb/core/mycafe/MyCafeCommonScript-1488521268000-434752.js" charset="utf-8"></script>
+
+
+<script type="text/javascript">
+var LH = new mCafeCommon.LH_create();
+jQuery(window).on('load', jQuery.proxy(mCafeCommon.LH_exec, this));
+LH.add("mCafeCommon.closeScroll()");
+BMR.run('http://sp.naver.com/sp');
+
+var oCafeAppLauncher = new nhn.AppLauncher({
+    "sAPPName" : "네이버 카페",
+    "sInstallURLForIOS" : "http://itunes.apple.com/app/id420615104?mt=8",
+    "sInstallURLForANDROID" : "market://details?id=com.nhn.android.navercafe"
+});
+
+var oCafeAppLauncherUtil = new CafeAppLauncherUtil({
+    isIPhone : false
+});
+
+
+var cafeSecedeManager = new CafeSecedeManager({clubId: '28957042'});
+
+
+
+jQuery.noConflict();
+</script>
+
+
+
+
+<script type="text/javascript">
+var oMyCafeLayout = new MyCafeLayout({
+	nClubId : '28957042',
+	nMenuId : '23',
+	bCafeMember : true,
+	sBoardType : 'NORMAL',
+	welDimmedLayer : jQuery('#dimmedLayer'),
+	welSideMenuLayer : jQuery('#sideMenuLayer')
+});
+</script>
+
+
+
+
+
+<script type="text/javascript">
+/**
+ * MobileGuestBanner와 관련된 UI 로직을 정의한다.
+ * 
+ * @author aphros
+ * @requires jQuery, egjs, cafe.EventBinder
+ */
+var MobileGuestBanner = eg.Class.extend(cafe.EventBinder, {
+	name : 'MobileGuestBanner',
+	_welBanner : null,
+	_welHeader : null,
+
+	construct : function(htParam) {
+		this._setParam(htParam);
+
+		if (!this._welBanner || this._welBanner.length <= 0) {
+			return;
+		}
+		this._setEvent(window, 'scroll', this._onScroll);
+	},
+	
+	_setParam : function(htParam) {
+		this._welBanner = htParam.welBanner;
+		this._welHeader = htParam.welHeader;
+	},
+	
+	_onScroll : function(we) {
+		var nScrollTop = jQuery(window).scrollTop();
+
+		if (nScrollTop >= this._welHeader.height()) {
+			this._welHeader.addClass("fix");
+		} else {
+			this._welHeader.removeClass("fix");
+		}
+	} 
+});
+var oMobileGuestBanner = new MobileGuestBanner({
+	welBanner : jQuery('#mobileGuestBanner'),
+	welHeader : jQuery('#hd')
+});
+</script>
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+    
+
+
+
+
+<script type="text/javascript" src="/static/js/mobileweb/ArticleRead-1488964408000-58994.js" charset="utf-8"></script>
+
+
+
+	
+	
+	
+		
+	
+	
+
+ <script type="text/javascript">
+	try{
+		var lcsStiID = "m_cafe_article";
+		if(lcsStiID.length > 0) {
+			var etc = {};
+			etc["sti"] = lcsStiID;
+			lcs_do_gdid('90000004_01B9D9720000002D00000000',etc);
+		} else {
+			lcs_do_gdid('90000004_01B9D9720000002D00000000');
+		}
+	}catch(e) {}
+</script>
+
+
+
+
+ <script type="text/javascript"> 
+    //onload시점에 콜
+	jQuery(function() {
+ 		if(!!oCafeUtil){
+ 			oCafeUtil.makeJsElement('ugcvideoplayer', 'http://serviceapi.nmv.naver.com' , '/resources/lang/js/ugcvideoplayer-1.0.js');
+ 		}
+     });
+</script>
+
+
+<script type="text/javascript">
+var oArticleRead = new ArticleRead({
+    "clubid" : 28957042,
+    "articleid" : 45,
+    "menuid" : 23,
+    "useOtn" : false,
+    "contactInfoAvailable" : false,
+    "oCafeAppLauncher" : oCafeAppLauncher,
+    "bUseWYSIWYGModeEditor" : true,
+    "bKitkatNaverAppBrowser" : false,
+    "bDownloadAvailableDevice" : true,
+    "liveSearchUrl" : "https://m.search.naver.com,https://d3b430.nhncorp.com,https://d3b430.svr.naver.com,https://m.focus.naver.com,https://focus.search.naver.com/search.naver?where=m_live&sm=mtb_tfs&query=",
+    "fromNaver" : false, 
+    "sc" : "",
+    "articleUrl" : "http://cafe.naver.com/viz4and/45"
+});
+
+var oArticleFunctionButton = new ArticleFunctionButton({
+	"welOptionLayer" : jQuery("#optionLayer"),
+	"cafeId" : 28957042,
+	"articleId" : 45,
+    "menuId" : 23,
+    "hasRefArticle" : false,
+    "refArticleId" : 45,
+    "replyIndent" : 0,
+    "isMarketArticle" : false,
+    "isQuestion" : false,
+    "isSimpleArticle" : false,
+    "useWYSIWYGModeEditor" : true,
+    "isKitkatNaverAppBrowser" : false,
+	"isScrapedArticle" : false,
+    "isTemplateWrite" : false,
+    "isBlindArticle" : false,
+    "isAccessFromSpecificMenu" : false
+});
+
+var oCommentList = new CommentList({
+	'nClubId' : 28957042,
+	'nArticleId' : 45,
+	'nMenuId' : 23
+});
+
+var oMusicPlayerLoader = new MusicPlayerLoader();
+oSuicideSaver = new SuicideSaver();
+
+var oAttachMoviePlayer = new cafe.AttachMoviePlayer({
+	bOnLoadEvent : true,
+	sArticleContentId : "ct"
+});
+
+function moreSearchResult() {
+	nclk(this,'cnx.more','','');
+	document.location.href = "/ArticleSearchList.nhn?search.clubid=28957042&search.searchBy=0&search.sortBy=&search.query=" + encodeURIComponent('');
+}
+
+
+
+
+
+
+function findPurchaseUrl(){
+	var message = '';
+
+	
+	
+	
+	
+	
+		message = '14세 미만은 상품 등록 및 구매를 하실 수 없습니다.';
+		alert(message);
+		return "";
+	
+	
+	
+}
+
+function purchaseItem(){
+	var purchaseUrl = findPurchaseUrl();
+	if (!purchaseUrl || purchaseUrl == "") {
+		return;
+	}
+ 
+	window.open(purchaseUrl, 'Purchase', 700, 700, "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=1");
+}
+
+function purchaseNpay(){
+	var purchaseUrl = findPurchaseUrl();
+	if (!purchaseUrl || purchaseUrl == "") {
+		return;
+	}
+
+	document.location.href = purchaseUrl + "&p__g=n__w";
+}
+</script>
+<script type="text/javascript">
+    var oArticleLikedMemberButton = new ArticleLikedMemberButton({
+        likeCountClass : "_count",
+        likedMemberBtnId : "likedMemberBtn"
+    });
+    
+    
+	jQuery(function() {
+		if(!!oCafeUtil){
+			oCafeUtil.makeJsElement('reaction_min', 'http://cafe.like.naver.com' , '/js/reaction/dist/reaction.min.js');
+			setTimeout( initReaction , 500);
+		}
+	});
+    
+    function initReaction(){
+    	 if (window.reaction) {
+            reaction.init({
+                domain: "http://cafe.like.naver.com",
+                moduleClassname: "_reactionModule",
+                dependentLibrary: "",
+                cssId: "CAFE",
+                maxCount: 999,
+                contentCountPerOnceRequest: 10,
+                isMobile: true,
+                isOverwritingAsTemplate: false,
+                isHiddenLabel: true,
+                isHiddenCount: false,
+                isHiddenZeroCount: true,
+                isUsedLabelAsZeroCount: true,
+                callback: {
+                    updated: jQuery.proxy(oArticleLikedMemberButton.afterUpdate, oArticleLikedMemberButton),
+                    clicked: jQuery.proxy(oArticleLikedMemberButton.afterClick, oArticleLikedMemberButton)
+                }
+            });
+        }
+    }
+   oReadArticleListItemDisplayManager.read(28957042, 45);
+</script>
+
+
+
+<script type="text/javascript">
+
+var sUserAgent = navigator.userAgent;
+//네이버 앱에서 사용하는  글로벌 변수입니다. (삭제시 네이버앱에 문의.)
+var naverAppFloatingToolBarBottomMargin = 57;
+window.onpageshow = function(evt) {
+ 	if(!!sUserAgent &&  sUserAgent.indexOf("NAVER") > -1  &&  sUserAgent.indexOf("search") > -1){
+ 		function setFloatingToolbarBottomMargin(bottomMargin) {
+		    var tempIframe = document.createElement('iframe');
+		    tempIframe.style.display = 'none';
+		    tempIframe.src = 'naverapp://floatingtoolbar?bottomMargin=' + bottomMargin;
+		    document.documentElement.appendChild(tempIframe);
+		}
+ 		//네이버앱보다 로딩이 빠르면 툴바가 겹치는 현상 발생
+ 		setTimeout(function(){setFloatingToolbarBottomMargin(naverAppFloatingToolBarBottomMargin);}, 500);
+	}
+};
+</script>
+
+
+
+
+
+
+
+ <script type="text/javascript">
+var nJsRetryCnt = 5;
+
+//onload시점에 call
+jQuery(function() {
+	if(!!oCafeUtil){
+		oCafeUtil.makeJsElement("splugin", "http://spi.naver.net" , "/js/release/ko_KR/splugin.m.js",  "utf-8");
+		//splugin.m.js(31KB) 평균(Good 3G - 1.5Mb/s)에서 wait포함 download가 1.5초정도 소요됨.  
+		setTimeout(makeSocialPlugInCore, 500);   
+	}
+});
+     
+     
+function makeSocialPlugInCore() {
+   	if(typeof SocialPlugIn_Core == 'undefined' ) {
+   		if(nJsRetryCnt > 0) {
+			nJsRetryCnt = -- nJsRetryCnt;
+			setTimeout(makeSocialPlugInCore, 500); 
+		}   			
+		return;
+ 	}
+    
+    window.__splugin = SocialPlugIn_Core({
+        "evKey"       : "cafe",
+        "serviceName" : "카페",
+        "sourceName"  : "비즈포안드",
+        "dimmed"      : "default"
+    });
+}
+
+window.resize = function() {
+    if (window.__splugin) {
+        window.__splugin.resize();
+    }
+}
+
+if ("onorientationchange" in window) {
+    window.onorientationchange = function() {
+        if (window.__splugin) {
+            window.__splugin.resize();
+        }
+    }
+}
+
+function splugin_oninitialize() {
+    return htParameter;
+}
+</script>
+<script>
+ var htParameter = {
+    evKey  : "cafe",
+    servicName: "카페",
+
+    me : { display : "off" },
+    mail : {
+        display : "off",
+        srvid: 'social',
+        srvurl: 'http://bookmark.naver.com/getRichMailTmpl.ajax?sourceUrl=' + encodeURIComponent('http://cafe.naver.com/MailContent.nhn?clubid=28957042&articleid=45')
+    },
+    memo : { display : "off" },
+    calendar : { display : "off" },
+    bookmark : { display : "on" },
+    copyurl : { display : "on" },
+    mypeople : { display : "off" },
+    score : { display : "off" },
+
+    blog : {
+        display : "off"
+    },
+    cafe : {
+        display : "off"
+    },
+    post : { display : "off" },
+    pholar : { display : "off" },
+    twitter : { display : "off" },
+    facebook : { display : "off" },
+    band : { display : "off" },
+    line : { display : "off" },
+    kakaotalk : { display : "off" },
+    kakaostory : { display : "off" }
+};
+</script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        new NaverStatLogClientSender({
+            serviceId: "naver_cafe",
+            channelId: "28957042",
+            devMode: false,
+            optionalJson: {"user_type":"120","uri":"http://cafe.naver.com/viz4and/45","dimension_1":"23"},
+            bindUnloadEvent: true,
+            hitType: "cv",
+            eventCategory: "post_view"
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
