@@ -12,4 +12,8 @@ ThinPC는 두가지 버전으로 만들었습니다.
 
 하나는 손대지 않은 것, 다른 하나는 최적화를 조금 한 것 입니다.
 
-[스크린샷 1](/mirror/board/VZ/1/1.png), [스크린샷 2](/mirror/board/VZ/1/2.png)
+![스크린샷 1](/mirror/board/VZ/1/1.png)
+
+![스크린샷 2](/mirror/board/VZ/1/2.png)
+
+![스크린샷 3](/mirror/board/VZ/1/3.png)
