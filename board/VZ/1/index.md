@@ -1,7 +1,6 @@
 ### 설명
-
-다운로드 : https://mega.nz/#F!eZ5WnC5Q!uew-qZNoWoSyMjAb55YNsQ
-
+ 
+( 다운로드 )[https://mega.nz/#F!eZ5WnC5Q!uew-qZNoWoSyMjAb55YNsQ] 
 작동여부 : PC Bochs에서 확인 (핸드폰에서 Winload에러 나옵니다.)
 
 안되는 것 : 사운드 (장치 인식을 못함), 한글 입력
